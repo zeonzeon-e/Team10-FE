@@ -1,5 +1,7 @@
+import Header from "./components/Header";
+
 function App() {
-  return <div>Blossomthon Team 10 Front End</div>;
+  return <Header />;
 }
 
 export default App;
