@@ -5,15 +5,15 @@ import {
   MenuItem,
   MenuList,
   IconButton,
-  Flex,
   Text,
+  Flex,
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <Flex align="center" justify="center">
+    <Flex direction="row" justify="center" align="center">
       <Text fontSize="lg">만반잘부</Text>
       <Menu>
         <MenuButton
