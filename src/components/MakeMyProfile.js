@@ -1,5 +1,7 @@
 import React, { useState, useRef } from "react";
 import Header from "./Header";
+import Login from "./Login";
+import { Link } from "react-router-dom";
 import {
   Button,
   Container,
@@ -239,17 +241,16 @@ const MakeMyProfile = () => {
             <Text align="center">Want to save profile?</Text>
           </ModalBody>
           <ModalFooter m="0 auto" mb="20px">
-            <Button
-              onClick={() => {
-                onCloseSaveModal();
-                saveMyProfile();
-              }}
-              mr="20px"
-              size="lg"
-              type="submit"
-            >
-              YES
-            </Button>
+            <Link to='/Login'>
+            <Button onClick={() => {
+              onCloseSaveModal();
+              saveMyProfile();
+            }}
+            mr="20px"
+            size="lg"
+            type="submit"
+            > YES </Button>
+            </Link>
             <Button onClick={onCloseSaveModal} size="lg">
               NO
             </Button>
